@@ -3,7 +3,7 @@ const path = require('path');
 const webpack = require('webpack');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
-const setMAP = require('./pageconfig/common/pages');
+const setMAP = require('./pageconfig/pages');
 
 const BASE_PATH = path.resolve(__dirname);
 const SRC_PATH = path.resolve(BASE_PATH,'src');

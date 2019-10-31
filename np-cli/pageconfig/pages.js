@@ -26,7 +26,7 @@ const setMAP = (projectPath) => {
         console.log(path.resolve(projectPath,`${pageName}/index.js`));
         entry[pageName] = path.resolve(projectPath,`${pageName}/index.js`);
         htmlPage.push(new HtmlWebpackPlugin({
-          template: path.resolve(__dirname,'../index.html'),
+          template: path.resolve(__dirname,'./index.html'),
           filename: `${pageName}.html`,
           chunks: [pageName],
           title: title,
