@@ -12,7 +12,7 @@ const devConfig = {
   module:{
     rules: [
       {
-        test: /\.less$/,
+        test: /\.(le|c)ss$/,
         use: [
           'style-loader',
           {

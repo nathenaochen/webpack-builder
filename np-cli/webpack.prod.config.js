@@ -9,7 +9,7 @@ const prodConfig = {
     module: {
        rules: [
         {
-            test: /\.less$/,
+            test: /\.(le|c)ss$/,
             use: [
                 MiniCssExtractPlugin.loader,
                 {
