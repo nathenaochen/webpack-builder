@@ -28,7 +28,7 @@ const setMAP = (projectPath) => {
         htmlPage.push(new HtmlWebpackPlugin({
           template: path.resolve(__dirname,'./index.html'),
           filename: `${pageName}.html`,
-          chunks: [pageName],
+          chunks: ['manifest','baseReact','vendor',pageName],
           title: title,
           inject: true,
           minify: {

@@ -32,6 +32,22 @@ const prodConfig = {
         })
     ],
     optimization: {
+      splitChunks: {
+        cacheGroups: {
+          baseReact: {
+            test: /(react|react-dom)/,
+            name: 'baseReact',
+            chunks: 'all',
+            priority: 0,
+          },
+          vendor: {
+            test: /node_modules/,
+            name: 'vendor',
+            chunks: 'all',
+            priority: -1,
+          }
+        }
+      },
         minimizer: [
             new TerserPlugin({
                 terserOptions: {
@@ -56,7 +72,10 @@ const prodConfig = {
                     discardComments:{removeAll:true}
                 }
               }),
-        ]
+        ],
+        runtimeChunk: {   
+          name: "manifest"
+        }
     }
 }
 

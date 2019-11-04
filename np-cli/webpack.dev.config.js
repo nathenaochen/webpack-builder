@@ -30,6 +30,27 @@ const devConfig = {
       }
     ]
   },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        baseReact: {
+          test: /(react|react-dom)/,
+          name: 'baseReact',
+          chunks: 'all',
+          priority: 0,
+        },
+        vendor: {
+          test: /node_modules/,
+          name: 'vendor',
+          chunks: 'all',
+          priority: -1,
+        }
+      }
+    },
+    runtimeChunk: {   
+        name: "manifest"
+      }
+  },
   devtool:'source-map'
 }
 module.exports = merge(baseConfig,devConfig);
