@@ -15,7 +15,8 @@ const baseConfig = {
     entry:entry,
     output:{
         path:BUILD_PATH,
-        filename: '[name]_[chunkhash:8].js'
+        filename: '[name]_[chunkhash:8].js',
+        chunkFilename: '[name]_[chunkhash:8].js'
     },
     externals:{
         "react":'React',
