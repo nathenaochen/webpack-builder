@@ -51,6 +51,6 @@ const devConfig = {
         name: "manifest"
       }
   },
-  devtool:'source-map'
+  // devtool:'source-map'
 }
 module.exports = merge(baseConfig,devConfig);

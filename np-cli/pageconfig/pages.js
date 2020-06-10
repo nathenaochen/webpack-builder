@@ -8,12 +8,7 @@ const pages = [
     {
         'title':'首页',
         'pageName': 'index'
-    },
-    {
-      'title':'我的',
-      'pageName': 'my'
-  },
-  
+    }
 ]
 
 var entry = {};
@@ -21,9 +16,9 @@ var htmlPage = [];
 
 const setMAP = (projectPath) => {
     pages.map((item)=>{
-        const {title,pageName} = item;
+      const {title,pageName} = item;
       if(item){
-        console.log(path.resolve(projectPath,`${pageName}/index.js`));
+        // console.log(path.resolve(projectPath,`${pageName}/index.js`));
         entry[pageName] = path.resolve(projectPath,`${pageName}/index.js`);
         htmlPage.push(new HtmlWebpackPlugin({
           template: path.resolve(__dirname,'./index.html'),
