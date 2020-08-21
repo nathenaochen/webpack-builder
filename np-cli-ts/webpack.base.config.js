@@ -18,10 +18,10 @@ const baseConfig = {
         filename: '[name]_[chunkhash:8].js',
         chunkFilename: '[name]_[chunkhash:8].js'
     },
-    // externals:{
-    //     "react":'React',
-    //     "react-dom":'ReactDOM'
-    //   },
+    externals:{
+        "react":'React',
+        "react-dom":'ReactDOM'
+      },
     module:{
         rules:[
             {

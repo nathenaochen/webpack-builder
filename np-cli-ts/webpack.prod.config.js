@@ -34,12 +34,12 @@ const prodConfig = {
     optimization: {
       splitChunks: {
         cacheGroups: {
-          baseReact: {
-            test: /(react|react-dom)/,
-            name: 'baseReact',
-            chunks: 'all',
-            priority: 0,
-          },
+          // baseReact: {
+          //   test: /(react|react-dom)/,
+          //   name: 'baseReact',
+          //   chunks: 'all',
+          //   priority: 0,
+          // },
           vendor: {
             test: /node_modules/,
             name: 'vendor',
@@ -49,19 +49,19 @@ const prodConfig = {
         }
       },
         minimizer: [
-            // new TerserPlugin({
-            //     terserOptions: {
-            //         output: {
-            //           comments: false,
-            //         },
-            //         compress: {
-            //             drop_console: true,
-            //             drop_debugger: true,
-            //             pure_funcs: ['console.log']
-            //         }
-            //       },
-            //       extractComments: false,
-            // }),
+            new TerserPlugin({
+                terserOptions: {
+                    output: {
+                      comments: false,
+                    },
+                    compress: {
+                        drop_console: true,
+                        drop_debugger: true,
+                        pure_funcs: ['console.log']
+                    }
+                  },
+                  extractComments: false,
+            }),
             new OptimizeCSSAssetsPlugin({
                 assetNameRegExp: /\.css$/g,
                 cssProcessor: require('cssnano'),
