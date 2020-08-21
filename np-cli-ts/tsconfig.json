@@ -1,8 +1,8 @@
 {
   "compilerOptions": {                     
-    "noEmit": true,   
-    "jsx": "react",
-    "baseUrl": "./",
+    "noEmit": true,   //让tsc只做类型检查，不做编译
+    "jsx": "react",   //让编辑器支持typescript React语法
+    "baseUrl": "./",  //结合webpack resolve  做别名时使用
     "paths": {
       " components/*":["components/*"]
     },
