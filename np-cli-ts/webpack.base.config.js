@@ -25,7 +25,7 @@ const baseConfig = {
     module:{
         rules:[
             {
-                test:/\.(js|jsx)$/,
+                test:/\.(ts|tsx)$/,
                 use:'babel-loader',
                 exclude:/node_modules/
             },
@@ -52,7 +52,7 @@ const baseConfig = {
         alias:{
             components:path.resolve(BASE_PATH,'./components'),
         },
-        extensions:['.js','.jsx']
+        extensions:['.js','.ts','.tsx'],
     },
     plugins:[
         new CleanWebpackPlugin(),

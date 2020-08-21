@@ -49,19 +49,19 @@ const prodConfig = {
         }
       },
         minimizer: [
-            new TerserPlugin({
-                terserOptions: {
-                    output: {
-                      comments: false,
-                    },
-                    compress: {
-                        drop_console: true,
-                        drop_debugger: true,
-                        pure_funcs: ['console.log']
-                    }
-                  },
-                  extractComments: false,
-            }),
+            // new TerserPlugin({
+            //     terserOptions: {
+            //         output: {
+            //           comments: false,
+            //         },
+            //         compress: {
+            //             drop_console: true,
+            //             drop_debugger: true,
+            //             pure_funcs: ['console.log']
+            //         }
+            //       },
+            //       extractComments: false,
+            // }),
             new OptimizeCSSAssetsPlugin({
                 assetNameRegExp: /\.css$/g,
                 cssProcessor: require('cssnano'),

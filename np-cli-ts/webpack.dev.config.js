@@ -52,5 +52,17 @@ const devConfig = {
       }
   },
   // devtool:'source-map'
+  devServer: {
+    // hot: true,
+    
+    compress: true,
+    open: true,
+    // proxy: {
+    //   '/apiService': {
+    //     target: 'http://39.99.174.23:3000',
+    //   }
+    
+    // }
+  }
 }
 module.exports = merge(baseConfig,devConfig);

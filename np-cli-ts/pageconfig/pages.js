@@ -19,7 +19,7 @@ const setMAP = (projectPath) => {
       const {title,pageName} = item;
       if(item){
         // console.log(path.resolve(projectPath,`${pageName}/index.js`));
-        entry[pageName] = path.resolve(projectPath,`${pageName}/index.js`);
+        entry[pageName] = path.resolve(projectPath,`${pageName}/index.ts`);
         htmlPage.push(new HtmlWebpackPlugin({
           template: path.resolve(__dirname,'./index.html'),
           filename: `${pageName}.html`,
