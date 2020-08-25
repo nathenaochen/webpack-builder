@@ -15,8 +15,9 @@ const prodConfig = {
                 {
                     loader: 'css-loader',
                     options: {
-                        modules: true,
-                        localIdentName: '_[name]_[local]-[hash:base64:5]'
+                        modules: {
+                          localIdentName: '_[name]_[local]-[hash:base64:5]'
+                        },
                     }
                 },
                 'postcss-loader',

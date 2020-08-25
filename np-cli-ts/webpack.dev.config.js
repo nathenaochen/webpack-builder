@@ -53,16 +53,16 @@ const devConfig = {
   },
   // devtool:'source-map'
   devServer: {
-    // hot: true,
-    
     compress: true,
     open: true,
-    // proxy: {
-    //   '/apiService': {
-    //     target: 'http://39.99.174.23:3000',
-    //   }
+    proxy: {
+      '/apiService': {
+        // target: 'http://39.99.174.23:3000',
+        target: 'http://localhost:3000',
+        pathRewrite: {'/apiService':''}
+      }
     
-    // }
+    }
   }
 }
 module.exports = merge(baseConfig,devConfig);

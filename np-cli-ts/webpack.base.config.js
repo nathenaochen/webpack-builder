@@ -51,6 +51,9 @@ const baseConfig = {
     resolve:{
         alias:{
             components:path.resolve(BASE_PATH,'./components'),
+            apiService:path.resolve(BASE_PATH,'./apiService'),
+            constant:path.resolve(BASE_PATH,'./constant'),
+            interface:path.resolve(BASE_PATH,'./interface'),
         },
         extensions:['.js','.ts','.tsx'],
     },
