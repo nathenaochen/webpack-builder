@@ -1,6 +1,15 @@
 /np-cli/node_modules/
 /np-cli/build/
 /np-cli/package-lock.json
+
 /np-cli-ts/node_modules/
 /np-cli-ts/build/
 /np-cli-ts/package-lock.json
+
+/np-cli-spa/node_modules/
+/np-cli-spa/build/
+/np-cli-spa/package-lock.json
+
+/ts-lib-cli/node_modules/
+/ts-lib-cli/dist/
+/ts-lib-cli/package-lock.json

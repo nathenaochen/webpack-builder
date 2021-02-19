@@ -1,0 +1,28 @@
+{
+  "name": "ts-lib-cli",
+  "version": "1.0.0",
+  "description": "前端工具库打包",
+  "sideEffects": false,
+  "main": "dist/tools.umd.js",
+  "module": "./dist/tools.es5.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx rollup -c",
+    "copy": "copy package.json dist"
+  },
+  "keywords": [
+    "toolkit",
+    "rollup",
+    "typescript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript": "^1.0.1",
+    "tslib": "^2.1.0",
+    "typescript": "^4.1.4"
+  }
+}
