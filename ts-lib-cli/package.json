@@ -13,6 +13,7 @@
     "testj": "jest",
     "publish": "npm run build && npm run publishshell && cd ./dist && npm publish",
     "publishshell": "node ./publishshell.js",
+    "doc":"typedoc",
     "copy": "copy package.json dist"
   },
   "keywords": [
