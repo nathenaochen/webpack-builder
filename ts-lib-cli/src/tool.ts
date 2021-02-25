@@ -3,7 +3,13 @@ import {version} from '../package.json'
 console.log(version);
 
 export function formatmoney(money: string | number):string{
-  console.log('formatmoney');
+  let a = [1,2,3]
+  let obj = {a:1}
+
+  console.log('formatmoney',[...a],a.includes(3),new Set(a),obj?.a, Array.from({length:3}));
+  for(let v of a){
+    console.log(v,'of');
+  }
   return 'money'
 }
 
