@@ -2,6 +2,9 @@
 import {version} from '../package.json'
 console.log(version);
 
+/**
+ * @param money  金额.
+ */
 export function formatmoney(money: string | number):string{
   let a = [1,2,3]
   let obj = {a:1}

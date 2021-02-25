@@ -6,12 +6,17 @@
     "declarationDir": "dist/types",                  /* Concatenate and emit output to single file. */
     // "outDir": "dist/lib",                         /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */
     // "noEmit": true,
-    "strict": true, 
+    // "strict": true, 
     "moduleResolution": "node",             
     "esModuleInterop": true,              
     "skipLibCheck": true,                     
     "forceConsistentCasingInFileNames": true, 
     "resolveJsonModule": true,
   },
-  "include": ["src","rollup.config.js"]
+  //通过typedoc生成文档所需要的配置  typedoc的配置
+  "typedocOptions": {
+    "entryPoints": ["src/tool.ts"],
+    "out": "docs"
+  },
+  "include": ["src","rollup.config.js","test"]
 }
