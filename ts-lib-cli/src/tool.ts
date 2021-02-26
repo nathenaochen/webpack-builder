@@ -3,6 +3,7 @@ import {version} from '../package.json'
 console.log(version);
 
 /**
+ * 格式化金额
  * @param money  金额.
  */
 export function formatmoney(money: string | number):string{
